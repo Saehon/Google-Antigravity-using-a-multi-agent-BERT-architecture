@@ -111,6 +111,10 @@ Use these tags to organize audit and compliance issues:
 - `IFRS`
 - `ISSB`
 
+## Related Projects
+
+- [Financial Sentiment Analysis and Classification Deep Learning Models](https://github.com/Saehon/Financial-Sentiment-Analysis-and-Classification-Deep-Learning-Models) — A complementary project using deep learning for financial text analysis and sentiment classification.
+
 ## License
 
 See `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` for licensing options.

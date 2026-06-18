@@ -84,8 +84,23 @@ See `AUDIT_STANDARDS.md` for:
 
 - IFRS-as-code controls.
 - EU AI Act compliance layer.
+- PCAOB and internal audit control alignment.
+- ISSB sustainability and ESG reporting.
 - international audit standard mapping.
 - GitHub-based transparency and traceability.
+
+### Recommended GitHub tags
+
+Use these tags to organize audit and compliance issues:
+
+- `bug4Audit`
+- `PCAOB`
+- `internal-control`
+- `risk-control`
+- `audit-traceability`
+- `EU-AI-Act`
+- `IFRS`
+- `ISSB`
 
 ## License
 

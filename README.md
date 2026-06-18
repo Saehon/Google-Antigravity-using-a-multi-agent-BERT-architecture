@@ -108,6 +108,11 @@ The runner writes the following files under `data/`:
 - `multi_agent_accounting_ai_results.xlsx`
 - `multi_agent_accounting_ai_figures.docx`
 
+## GitHub Actions
+
+This repository includes a workflow at `.github/workflows/python-app.yml`.
+It runs on push and pull request events to `main`, installs dependencies, executes `multi_agent_accounting_ai_runner.py`, and uploads the generated `data/` files as workflow artifacts.
+
 ## Optional
 
 Set `GITHUB_TOKEN` as an environment variable to increase GitHub API rate limits for ERPNext artifact collection.

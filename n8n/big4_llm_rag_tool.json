@@ -1,0 +1,99 @@
+{
+  "name": "Big4 LLM RAG Audit Tool",
+  "nodes": [
+    {
+      "parameters": {
+        "functionCode": "const documents = [\n  { id: 'ifrs', text: 'IFRS control logic and accounting rules.' },\n  { id: 'eu_ai_act', text: 'EU AI Act controls for high-risk AI systems.' },\n  { id: 'audit_template', text: 'Audit issue templates for bug4Audit and compliance findings.' }\n];\nreturn documents.map(doc => ({ json: doc }));"
+      },
+      "name": "Load Reference Corpus",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [250, 250]
+    },
+    {
+      "parameters": {
+        "functionCode": "const query = items[0].json.query || 'audit controls';\nconst results = items[0].json.corpus.filter(doc => doc.text.toLowerCase().includes('ifrs') || doc.text.toLowerCase().includes('eu ai act'));\nreturn results.map(doc => ({ json: { source: doc.id, snippet: doc.text } }));"
+      },
+      "name": "RAG Retriever",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [500, 250]
+    },
+    {
+      "parameters": {
+        "functionCode": "const query = items[0].json.query || 'Provide audit review guidance for BERT and cybersecurity.';\nconst docs = items.map(item => item.json.snippet).join('\n\n');\nreturn [{ json: { prompt: `Use the following reference documents to answer the auditor query:\n\n${docs}\n\nQuery: ${query}` } }];"
+      },
+      "name": "Build RAG Prompt",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [750, 250]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "input": "={{$json[\"prompt\"]}}",
+        "options": {}
+      },
+      "name": "LLM Response",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [1000, 250]
+    },
+    {
+      "parameters": {
+        "mode": "append",
+        "filePath": "data/big4_llm_rag_audit_response.json"
+      },
+      "name": "Write Response",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [1250, 250]
+    }
+  ],
+  "connections": {
+    "Load Reference Corpus": {
+      "main": [
+        [
+          {
+            "node": "RAG Retriever",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RAG Retriever": {
+      "main": [
+        [
+          {
+            "node": "Build RAG Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build RAG Prompt": {
+      "main": [
+        [
+          {
+            "node": "LLM Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM Response": {
+      "main": [
+        [
+          {
+            "node": "Write Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

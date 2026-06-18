@@ -118,8 +118,10 @@ Use the tag `bug4Audit` in issue titles and labels when reporting audit findings
 
 ## n8n integration
 
-A sample n8n workflow is included at `n8n/bert_cyber_audit_workflow.json`.
-It demonstrates connecting ERPNext artifact collection, BERT-based risk proxy logic, and cybersecurity/audit logging for automated workflow orchestration.
+Sample n8n workflows are included:
+
+- `n8n/bert_cyber_audit_workflow.json` — ERPNext artifact collection with BERT/cyber risk proxy and audit logging.
+- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool for organizational risk review and control guidance.
 
 ## Audit standards
 

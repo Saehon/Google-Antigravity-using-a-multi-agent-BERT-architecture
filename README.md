@@ -84,6 +84,7 @@ See `AUDIT_STANDARDS.md` for:
 
 - IFRS-as-code controls.
 - EU AI Act compliance layer.
+- Audit Data Standards (ADS) and data governance controls.
 - PCAOB and internal audit control alignment.
 - ISSB sustainability and ESG reporting.
 - international audit standard mapping.
@@ -98,6 +99,7 @@ Use these tags to organize audit and compliance issues:
 - `internal-control`
 - `risk-control`
 - `audit-traceability`
+- `ADS`
 - `EU-AI-Act`
 - `IFRS`
 - `ISSB`

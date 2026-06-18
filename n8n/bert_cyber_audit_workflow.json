@@ -1,0 +1,82 @@
+{
+  "name": "BERT Cyber Audit Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/frappe/erpnext/git/trees/develop?recursive=1",
+        "options": {
+          "headers": {
+            "accept": "application/vnd.github.v3+json"
+          }
+        }
+      },
+      "name": "Collect ERPNext Artifacts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [250, 150]
+    },
+    {
+      "parameters": {
+        "functionCode": "const items = items[0].json.tree || [];\nconst accountingItems = items.filter(item => item.type === 'blob' && /account|invoice|ledger|journal|tax|payment/i.test(item.path));\nreturn accountingItems.map(item => ({ json: item }));"
+      },
+      "name": "Filter Accounting Artifacts",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [500, 150]
+    },
+    {
+      "parameters": {
+        "functionCode": "items[0].json = { summary: 'BERT and cyber audit proxy pipeline imported', artifactCount: items.length };\nreturn items;"
+      },
+      "name": "BERT/Cyber Risk Proxy",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [750, 150]
+    },
+    {
+      "parameters": {
+        "mode": "append",
+        "filePath": "data/n8n_bert_cyber_audit_log.json"
+      },
+      "name": "Write Audit Log",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [1000, 150]
+    }
+  ],
+  "connections": {
+    "Collect ERPNext Artifacts": {
+      "main": [
+        [
+          {
+            "node": "Filter Accounting Artifacts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter Accounting Artifacts": {
+      "main": [
+        [
+          {
+            "node": "BERT/Cyber Risk Proxy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BERT/Cyber Risk Proxy": {
+      "main": [
+        [
+          {
+            "node": "Write Audit Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

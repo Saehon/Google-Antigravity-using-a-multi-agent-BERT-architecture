@@ -116,6 +116,11 @@ It runs on push and pull request events to `main`, installs dependencies, execut
 This repo includes an audit-focused issue template at `.github/ISSUE_TEMPLATE/bug_report.md`.
 Use the tag `bug4Audit` in issue titles and labels when reporting audit findings or compliance bugs.
 
+## n8n integration
+
+A sample n8n workflow is included at `n8n/bert_cyber_audit_workflow.json`.
+It demonstrates connecting ERPNext artifact collection, BERT-based risk proxy logic, and cybersecurity/audit logging for automated workflow orchestration.
+
 ## Optional
 
 Set `GITHUB_TOKEN` as an environment variable to increase GitHub API rate limits for ERPNext artifact collection.

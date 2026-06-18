@@ -33,7 +33,7 @@ This repository combines:
 - `.github/ISSUE_TEMPLATE/bug_report.md` — auditor-friendly issue template.
 - `AUDIT_STANDARDS.md` — IFRS-as-code, EU AI Act compliance, and audit layering.
 - `n8n/bert_cyber_audit_workflow.json` — BERT + cyber audit automation.
-- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool.
+- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool (PwC, EY, KPMG, Deloitte concepts).
 - `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` — license options.
 
 ## Deployment
@@ -102,6 +102,11 @@ Use these tags to organize audit and compliance issues:
 - `risk-control`
 - `audit-traceability`
 - `ADS`
+- `Big4`
+- `PwC`
+- `EY`
+- `KPMG`
+- `Deloitte`
 - `EU-AI-Act`
 - `IFRS`
 - `ISSB`

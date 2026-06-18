@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛡️ Multi-Agent Accounting AI Framework
 
 * Multi-agent AI system for accounting and audit analytics
@@ -76,4 +77,38 @@ It is not intended for direct production use in real financial environments with
 
 Homayoun, S., 2026. Multi-Agent Accounting AI Framework: ERP-Integrated ESG and Anomaly Detection System. GitHub repository.
 Available at: <https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture> [Accessed 17 June 2026].
+
+# Multi-Agent Accounting AI Runner
+
+This repository contains a standalone Python runner for a multi-agent accounting workflow that ingests ERPNext artifacts, generates a synthetic accounting ledger, scores risk, and exports results to CSV, Excel, and Word.
+
+## Deployment
+
+1. Open PowerShell in this folder.
+2. Create or reuse a virtual environment:
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+3. Install dependencies:
+   ```powershell
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+4. Run the workflow:
+   ```powershell
+   python .\multi_agent_accounting_ai_runner.py
+   ```
+
+## Outputs
+
+The runner writes the following files under `data/`:
+
+- `final_agent_output.csv`
+- `multi_agent_accounting_ai_results.xlsx`
+- `multi_agent_accounting_ai_figures.docx`
+
+## Optional
+
+Set `GITHUB_TOKEN` as an environment variable to increase GitHub API rate limits for ERPNext artifact collection.
 

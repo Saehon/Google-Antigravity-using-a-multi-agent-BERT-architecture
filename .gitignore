@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Data and generated outputs
+data/
+*.csv
+*.xlsx
+*.docx
+*.pptx
+*.pdf

@@ -1,0 +1,9 @@
+requests
+numpy
+pandas
+scikit-learn
+torch
+sentence-transformers
+openpyxl
+python-docx
+matplotlib

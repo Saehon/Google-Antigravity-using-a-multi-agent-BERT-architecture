@@ -2,11 +2,13 @@
 
 A GitHub-ready project for auditor-focused financial intelligence, BERT-based NLP analytics, cybersecurity risk control, and governance compliance.
 
+This repository is aligned with the Google Antigravity concept, Google Enterprise ERP integration, and Google Vertive analytics capabilities.
+
 ## Overview
 
 This repository combines:
 
-- `multi_agent_accounting_ai_runner.py` — a standalone Python workflow for ERPNext-based synthetic accounting, anomaly detection, ESG scoring, and compliance evaluation.
+- `multi_agent_accounting_ai_runner.py` — a standalone Python workflow for ERPNext-based synthetic accounting, anomaly detection, ESG scoring, and compliance evaluation within a Google Antigravity-inspired enterprise ERP context.
 - `n8n` workflows for automation and orchestration.
 - audit documentation and standards for IFRS-as-code and EU AI Act control layers.
 - GitHub Actions CI for reproducible execution and artifact generation.

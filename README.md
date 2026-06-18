@@ -1,134 +1,98 @@
 # 🛡️ Multi-Agent Accounting AI Framework
 
-* Multi-agent AI system for accounting and audit analytics
-* ERPNext-based structural integration for financial context simulation
-* ESG risk scoring (Environmental, Social, Governance)
-* Cybersecurity disclosure and risk detection
-* Anomaly detection using deep learning and statistical models
-* AI governance and compliance scoring (explainability + transparency layer)
-* Lightweight and full research execution modes
-* Google Colab and agent-based execution support
+A GitHub-ready project for auditor-focused financial intelligence, BERT-based NLP analytics, cybersecurity risk control, and governance compliance.
 
-## ⚙️ Core Architecture
+## Overview
 
-The framework operates through coordinated AI agents:
+This repository combines:
 
-* Data Agent: Extracts and simulates ERP-based accounting data
-* Preprocessing Agent: Cleans and prepares financial datasets
-* NLP Agent: Applies transformer-based embeddings for financial text analysis
-* Anomaly Detection Agent: Identifies irregular transactions and patterns
-* ESG Agent: Computes sustainability and ESG risk scores
-* Compliance Agent: Evaluates AI transparency and governance alignment
-* Visualization Agent: Produces dashboards and analytical reports
+- `multi_agent_accounting_ai_runner.py` — a standalone Python workflow for ERPNext-based synthetic accounting, anomaly detection, ESG scoring, and compliance evaluation.
+- `n8n` workflows for automation and orchestration.
+- audit documentation and standards for IFRS-as-code and EU AI Act control layers.
+- GitHub Actions CI for reproducible execution and artifact generation.
+- audit issue templates for structured bug reporting.
 
-## 🔬 Methodological Approach
+## Key capabilities
 
-The system combines:
+- Synthetic ERP/ledger data generation with accounting and compliance context.
+- Multi-agent scoring using BERT-style semantic embeddings and proxy risk models.
+- Anomaly detection via PyTorch autoencoder and Isolation Forest.
+- ESG score computation and EU AI Act-style compliance scoring.
+- Export to CSV, Excel (`.xlsx`), and Word (`.docx`) reports.
+- n8n automation examples for audit workflow orchestration.
+- Audit standard alignment with IFRS, EU AI Act, and international control layers.
 
-* Transformer-based semantic representation (BERT-like embeddings)
-* Autoencoder-based anomaly detection
-* Isolation Forest for lightweight detection mode
-* Multi-agent orchestration for modular decision-making
-* Synthetic ERP-based dataset generation for controlled experimentation
+## Project structure
 
-## 🌱 ESG & Compliance Layer
-
-The framework calculates ESG scores and classifies organizational risk into:
-
-* Low Risk (Green)
-* Medium Risk (Yellow)
-* High Risk (Red)
-
-It also includes an AI governance module aligned with transparency, accountability, and auditability principles.
-
----
-
-## ☁️ Execution Modes
-
-* Full Mode: Deep learning + full multi-agent pipeline
-* Mini Mode: Lightweight ML version for fast execution
-* Google Mode: Colab-based agent execution for cloud deployment
-
-## 📊 Output
-
-The system generates:
-
-* Anomaly detection reports
-* ESG risk dashboards
-* AI compliance scores
-* Visual analytics (Streamlit / Plotly)
-* API-based audit results
-
-## 🎯 Purpose
-
-This framework is designed for:
-
-* Accounting and auditing research
-* ESG and sustainability analytics
-* AI governance and compliance studies
-* Agent-based financial intelligence systems
-* Educational and research demonstrations
-
-## Note
-
-The system uses synthetic datasets and proxy models for research purposes. It is not intended for direct production use in real financial environments without further validation and regulatory adaptation.
-
-Homayoun, S., 2026. Multi-Agent Accounting AI Framework: ERP-Integrated ESG and Anomaly Detection System. GitHub repository.
-Available at: <https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture> [Accessed 17 June 2026].
-
-# Multi-Agent Accounting AI Runner
-
-This repository contains a standalone Python runner for a multi-agent accounting workflow that ingests ERPNext artifacts, generates a synthetic accounting ledger, scores risk, and exports results to CSV, Excel, and Word.
+- `multi_agent_accounting_ai_runner.py` — main runnable workflow.
+- `requirements.txt` — Python package dependencies.
+- `deploy.ps1` — Windows deployment helper.
+- `.github/workflows/python-app.yml` — GitHub Actions workflow.
+- `.github/ISSUE_TEMPLATE/bug_report.md` — auditor-friendly issue template.
+- `AUDIT_STANDARDS.md` — IFRS-as-code, EU AI Act compliance, and audit layering.
+- `n8n/bert_cyber_audit_workflow.json` — BERT + cyber audit automation.
+- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool.
+- `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` — license options.
 
 ## Deployment
 
-1. Open PowerShell in this folder.
-2. Create or reuse a virtual environment:
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
-3. Install dependencies:
-   ```powershell
-   python -m pip install --upgrade pip
-   python -m pip install -r requirements.txt
-   ```
-4. Run the workflow:
-   ```powershell
-   python .\multi_agent_accounting_ai_runner.py
-   ```
+### Local setup
 
-## Outputs
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
 
-The runner writes the following files under `data/`:
+### Run the main workflow
+
+```powershell
+python .\multi_agent_accounting_ai_runner.py
+```
+
+### Outputs
+
+The workflow generates files in the `data/` folder:
 
 - `final_agent_output.csv`
 - `multi_agent_accounting_ai_results.xlsx`
 - `multi_agent_accounting_ai_figures.docx`
+- `data/n8n_bert_cyber_audit_log.json` (if n8n workflow is used)
+- `data/big4_llm_rag_audit_response.json` (if n8n workflow is used)
 
 ## GitHub Actions
 
-This repository includes a workflow at `.github/workflows/python-app.yml`.
-It runs on push and pull request events to `main`, installs dependencies, executes `multi_agent_accounting_ai_runner.py`, and uploads the generated `data/` files as workflow artifacts.
+Continuous integration is provided by `.github/workflows/python-app.yml`.
+It runs on pushes and pull requests to `main`, installs dependencies, executes the runner, and uploads generated artifacts.
 
 ## Auditor support
 
-This repo includes an audit-focused issue template at `.github/ISSUE_TEMPLATE/bug_report.md`.
-Use the tag `bug4Audit` in issue titles and labels when reporting audit findings or compliance bugs.
+Use the GitHub issue template at `.github/ISSUE_TEMPLATE/bug_report.md` for audit findings.
+Tag issues with `bug4Audit` to highlight compliance or control gaps.
 
-## n8n integration
+## n8n automation
 
-Sample n8n workflows are included:
+This repo includes n8n workflow examples for audit and automation:
 
-- `n8n/bert_cyber_audit_workflow.json` — ERPNext artifact collection with BERT/cyber risk proxy and audit logging.
-- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool for organizational risk review and control guidance.
+- `n8n/bert_cyber_audit_workflow.json` — ERPNext artifact collection, BERT risk proxy, and audit log generation.
+- `n8n/big4_llm_rag_tool.json` — a Big4-style retrieval augmented generation tool for LLM-guided audit guidance.
 
-## Audit standards
+## Audit standards and controls
 
-This project maintains a dedicated audit standards document at `AUDIT_STANDARDS.md`.
-It documents IFRS-as-code, EU AI Act compliance controls, and international audit standard layer mapping.
+See `AUDIT_STANDARDS.md` for:
 
-## Optional
+- IFRS-as-code controls.
+- EU AI Act compliance layer.
+- international audit standard mapping.
+- GitHub-based transparency and traceability.
 
-Set `GITHUB_TOKEN` as an environment variable to increase GitHub API rate limits for ERPNext artifact collection.
+## License
+
+See `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` for licensing options.
+
+## Notes
+
+This project is designed for research, demonstration, and audit automation support.
+It uses synthetic and proxy modeling approaches; it should not be used as a direct production accounting system without further validation and regulatory review.
 

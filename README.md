@@ -18,6 +18,7 @@ This repository combines:
 
 - Synthetic ERP/ledger data generation with accounting and compliance context.
 - Multi-agent scoring using BERT-style semantic embeddings and proxy risk models.
+- **Fuzzy Logic Neural Networks for Explainable AI:** IFRS-as-code and internal audit standards layered on interpretable fuzzy inference engines aligned with EU AI Act requirements.
 - Anomaly detection via PyTorch autoencoder and Isolation Forest.
 - ESG score computation and EU AI Act-style compliance scoring.
 - Export to CSV, Excel (`.xlsx`), and Word (`.docx`) reports.
@@ -32,6 +33,7 @@ This repository combines:
 - `.github/workflows/python-app.yml` — GitHub Actions workflow.
 - `.github/ISSUE_TEMPLATE/bug_report.md` — auditor-friendly issue template.
 - `AUDIT_STANDARDS.md` — IFRS-as-code, EU AI Act compliance, and audit layering.
+- `FUZZY_LOGIC_EXPLAINABILITY.md` — Fuzzy logic neural networks for explainable AI and audit transparency.
 - `n8n/bert_cyber_audit_workflow.json` — BERT + cyber audit automation.
 - `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool (PwC, EY, KPMG, Deloitte concepts).
 - `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` — license options.

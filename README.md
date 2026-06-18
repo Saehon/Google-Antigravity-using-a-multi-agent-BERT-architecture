@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛡️ Multi-Agent Accounting AI Framework
 
 * Multi-agent AI system for accounting and audit analytics
@@ -60,7 +59,7 @@ The system generates:
 * Visual analytics (Streamlit / Plotly)
 * API-based audit results
 
--## 🎯 Purpose
+## 🎯 Purpose
 
 This framework is designed for:
 
@@ -70,10 +69,9 @@ This framework is designed for:
 * Agent-based financial intelligence systems
 * Educational and research demonstrations
 
-##  Note
+## Note
 
-The system uses synthetic datasets and proxy models for research purposes. 
-It is not intended for direct production use in real financial environments without further validation and regulatory adaptation.
+The system uses synthetic datasets and proxy models for research purposes. It is not intended for direct production use in real financial environments without further validation and regulatory adaptation.
 
 Homayoun, S., 2026. Multi-Agent Accounting AI Framework: ERP-Integrated ESG and Anomaly Detection System. GitHub repository.
 Available at: <https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture> [Accessed 17 June 2026].
@@ -112,6 +110,11 @@ The runner writes the following files under `data/`:
 
 This repository includes a workflow at `.github/workflows/python-app.yml`.
 It runs on push and pull request events to `main`, installs dependencies, executes `multi_agent_accounting_ai_runner.py`, and uploads the generated `data/` files as workflow artifacts.
+
+## Auditor support
+
+This repo includes an audit-focused issue template at `.github/ISSUE_TEMPLATE/bug_report.md`.
+Use the tag `bug4Audit` in issue titles and labels when reporting audit findings or compliance bugs.
 
 ## Optional
 

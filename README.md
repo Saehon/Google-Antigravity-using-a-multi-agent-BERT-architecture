@@ -121,6 +121,11 @@ Use the tag `bug4Audit` in issue titles and labels when reporting audit findings
 A sample n8n workflow is included at `n8n/bert_cyber_audit_workflow.json`.
 It demonstrates connecting ERPNext artifact collection, BERT-based risk proxy logic, and cybersecurity/audit logging for automated workflow orchestration.
 
+## Audit standards
+
+This project maintains a dedicated audit standards document at `AUDIT_STANDARDS.md`.
+It documents IFRS-as-code, EU AI Act compliance controls, and international audit standard layer mapping.
+
 ## Optional
 
 Set `GITHUB_TOKEN` as an environment variable to increase GitHub API rate limits for ERPNext artifact collection.

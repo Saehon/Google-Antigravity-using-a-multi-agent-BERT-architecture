@@ -1,0 +1,51 @@
+schema_version: "1.0"
+name: Multi-Agent-BERT-Audit-Runtime
+version: "0.1.0"
+type: agent-runtime
+domain: audit-analytics
+subdomains:
+  - ERPNext
+  - anomaly-detection
+  - ESG
+  - cyber-audit
+  - orchestration
+repository: Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture
+entrypoint: multi_agent_accounting_ai_runner.py
+capabilities:
+  - multi-agent-orchestration
+  - synthetic-ledger-generation
+  - anomaly-detection
+  - semantic-financial-analysis
+  - n8n-workflows
+  - reproducible-CI
+inputs:
+  - ERP-data
+  - synthetic-ledger
+  - financial-text
+outputs:
+  - anomaly-scores
+  - audit-findings
+  - ESG-scores
+  - compliance-scores
+  - reproducible-artifacts
+governance:
+  risk_level: medium
+  human_review: required
+  evidence_required: true
+  production_gate:
+    - schema-validation
+    - benchmark
+    - red-team
+    - risk-review
+    - human-approval
+evaluation:
+  benchmark: Agent-Runtime-Eval
+  checks:
+    - reproducibility
+    - anomaly-performance
+    - evidence-traceability
+    - orchestration-reliability
+license:
+  - MIT
+  - Apache-2.0
+status: registered

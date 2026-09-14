@@ -5,16 +5,23 @@ authors:
     given-names: "Saeid"
     affiliation: "University of Gävle, Sweden"
     orcid: "https://orcid.org/0000-0002-2536-0446"
-title: "Multi-Agent Accounting AI Framework: BERT, Audit Analytics, Explainability and Governed Agentic Research"
+title: "Multi-Agent Accounting AI Framework: Audit Analytics, Digital Twins, Explainability and Governed Agentic Research"
 type: software
-version: "2026.1"
+version: "2026.2"
 date-released: 2026-09-14
 url: "https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture"
 keywords:
   - accounting
   - auditing
   - multi-agent systems
+  - digital twins
+  - Google ADK
+  - Microsoft Agent Framework
+  - Agent2Agent
+  - GraphRAG
   - BERT
   - explainable AI
   - audit analytics
+  - scientific discovery
+  - chain of evidence
   - NAAIL

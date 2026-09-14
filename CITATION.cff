@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use original research contributions from this repository, please cite them and preserve attribution to third-party components."
+authors:
+  - family-names: "Homayoun"
+    given-names: "Saeid"
+    affiliation: "University of Gävle, Sweden"
+    orcid: "https://orcid.org/0000-0002-2536-0446"
+title: "Multi-Agent Accounting AI Framework: BERT, Audit Analytics, Explainability and Governed Agentic Research"
+type: software
+version: "2026.1"
+date-released: 2026-09-14
+url: "https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture"
+keywords:
+  - accounting
+  - auditing
+  - multi-agent systems
+  - BERT
+  - explainable AI
+  - audit analytics
+  - NAAIL

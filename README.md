@@ -8,6 +8,12 @@
 
 > Independent research project. References to Google, Microsoft, OpenAI, Big Four firms, regulators, standard setters, or other organizations identify methodological inspiration, technologies, public materials, or comparison targets only. They do not imply affiliation, sponsorship, endorsement, certification, or validation.
 
+## Latest frozen architecture
+
+**V2026.3 — Google + Microsoft Multi-Agent Digital Twin Scientific Discovery Architecture** is the current frozen implementation target.
+
+See [`versions/V2026.3_NAAIL_MULTI_AGENT_DIGITAL_TWIN.md`](./versions/V2026.3_NAAIL_MULTI_AGENT_DIGITAL_TWIN.md) for the versioned snapshot covering A2A + MCP interoperability, GraphRAG, Digital Twin integration, Co-Scientist, ERA, AlphaEvolve, latent-structure reasoning, Computational Discovery, AI-to-AI Critic/Defender/Replicator/Falsifier review, Science One-style Chain-of-Evidence, DAG governance, rights gating, and mandatory Human Gate approval.
+
 ## Research purpose
 
 This repository investigates how multi-agent AI, digital twins, language models, machine learning, explainability, scientific-discovery workflows, and agent orchestration can support accounting and audit research while preserving evidence provenance, reproducibility, professional skepticism, uncertainty disclosure, and human judgment.

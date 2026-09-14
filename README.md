@@ -1,6 +1,6 @@
 # Multi-Agent Accounting AI Framework
 
-**NAAIL OpenLab research prototype for auditor-focused financial intelligence, BERT/NLP analytics, anomaly detection, explainable AI, and governed multi-agent systems.**
+**NAAIL OpenLab research prototype for auditor-focused financial intelligence, BERT/NLP analytics, anomaly detection, explainable AI, governed multi-agent systems, and accounting/audit digital twins.**
 
 **Researcher:** Dr. Saeid Homayoun  
 **ORCID:** https://orcid.org/0000-0002-2536-0446  
@@ -10,7 +10,7 @@
 
 ## Research purpose
 
-This repository investigates how multi-agent AI, language models, machine learning, explainability, and workflow orchestration can support accounting and audit research while preserving evidence provenance, reproducibility, professional skepticism, uncertainty disclosure, and human judgment.
+This repository investigates how multi-agent AI, digital twins, language models, machine learning, explainability, scientific-discovery workflows, and agent orchestration can support accounting and audit research while preserving evidence provenance, reproducibility, professional skepticism, uncertainty disclosure, and human judgment.
 
 ## Current capabilities
 
@@ -22,15 +22,45 @@ This repository investigates how multi-agent AI, language models, machine learni
 - n8n multi-agent workflow examples;
 - CSV/XLSX/DOCX research outputs;
 - GitHub Actions for reproducible execution;
-- audit/control mapping research.
+- audit/control mapping research;
+- vendor-neutral accounting/audit digital-twin architecture;
+- Google + Microsoft multi-agent interoperability roadmap.
 
 Important research assets include `multi_agent_accounting_ai_runner.py`, `AUDIT_STANDARDS.md`, `FUZZY_LOGIC_EXPLAINABILITY.md`, and the workflows under `n8n/`.
+
+## Google + Microsoft multi-agent digital twin stack
+
+The current recommended research foundation combines:
+
+```text
+Google Antigravity SDK / Google ADK
+        +
+Microsoft Agent Framework
+        +
+A2A / MCP interoperability
+        +
+Microsoft GraphRAG
+        +
+NAAIL accounting/audit Digital Twin
+        +
+Co-Scientist -> ERA -> AlphaEvolve -> latent-structure reasoning
+        +
+Science One-style Chain-of-Evidence
+        +
+AI-to-AI Critic / Defender / Replicator / Falsifier
+        +
+Human Gate
+```
+
+See **[`BIG4_MULTI_AGENT_DIGITAL_TWIN_STACK.md`](./BIG4_MULTI_AGENT_DIGITAL_TWIN_STACK.md)** for the full architecture, current Google/Microsoft technology map, open-source/reuse status, Big Four-style audit-twin design, scientific-discovery protocol, and IP/licensing rules.
+
+See **[`EXTERNAL_INTEGRATIONS.md`](./EXTERNAL_INTEGRATIONS.md)** for adapter-level integration targets.
 
 ## NAAIL scientific protocol
 
 Original research extensions follow:
 
-**Literature Validation → Co-Scientist Hypothesis Arena → ERA Empirical Design → AlphaEvolve / Computational Discovery → latent-structure reasoning → AI-to-AI Critic/Defender/Replicator → robustness → falsification → temporal/OOS validation → Chain-of-Evidence → DAG Governance → Human Gate.**
+**Literature Validation → Co-Scientist Hypothesis Arena → ERA Empirical Design → AlphaEvolve / Computational Discovery → latent-structure reasoning → AI-to-AI Critic/Defender/Replicator/Falsifier → robustness → falsification → temporal/OOS validation → Chain-of-Evidence → DAG Governance → Human Gate.**
 
 See [`NAAIL_RESEARCH_PROTOCOL.md`](./NAAIL_RESEARCH_PROTOCOL.md).
 
@@ -65,7 +95,7 @@ This repository is a supporting experimental system for the broader NAAIL portfo
 
 Use [`CITATION.cff`](./CITATION.cff). Suggested citation:
 
-> Homayoun, S. (2026). *Multi-Agent Accounting AI Framework: BERT, Audit Analytics, Explainability and Governed Agentic Research* [Research software]. GitHub. https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture. ORCID: 0000-0002-2536-0446.
+> Homayoun, S. (2026). *Multi-Agent Accounting AI Framework: BERT, Audit Analytics, Explainability, Digital Twins and Governed Agentic Research* [Research software]. GitHub. https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture. ORCID: 0000-0002-2536-0446.
 
 ## IP / patent-readiness notice
 
@@ -74,6 +104,8 @@ This repository may describe original research concepts, architectures, methods,
 ## License and third-party rights
 
 This repository currently contains MIT and Apache licensing materials. Those existing grants cannot be retroactively converted into a non-commercial restriction for copies already distributed under those terms. Third-party software, models, standards, datasets, workflows, and trademarks remain subject to their original terms.
+
+Open-source SDK licenses and hosted-model/service terms are separate. A library may be Apache-2.0 or MIT while the model API, cloud deployment, model weights, or commercial service remains subject to additional provider terms or charges.
 
 Future proprietary or research-only NAAIL modules should be kept clearly separate and licensed before public release if commercial use is intended to be restricted.
 

@@ -1,128 +1,82 @@
-# 🛡️ Multi-Agent Accounting AI Framework
+# Multi-Agent Accounting AI Framework
 
-A GitHub-ready project for auditor-focused financial intelligence, BERT-based NLP analytics, cybersecurity risk control, and governance compliance.
+**NAAIL OpenLab research prototype for auditor-focused financial intelligence, BERT/NLP analytics, anomaly detection, explainable AI, and governed multi-agent systems.**
 
-This repository is aligned with the Google Antigravity concept, Google Enterprise ERP integration, and Google Vertive analytics capabilities.
+**Researcher:** Dr. Saeid Homayoun  
+**ORCID:** https://orcid.org/0000-0002-2536-0446  
+**NAAIL OpenLab:** https://github.com/Saehon/Saeid-Homayoun/tree/main/NAAIL-OpenLab
 
-## Overview
+> Independent research project. References to Google, Microsoft, OpenAI, Big Four firms, regulators, standard setters, or other organizations identify methodological inspiration, technologies, public materials, or comparison targets only. They do not imply affiliation, sponsorship, endorsement, certification, or validation.
 
-This repository combines:
+## Research purpose
 
-- `multi_agent_accounting_ai_runner.py` — a standalone Python workflow for ERPNext-based synthetic accounting, anomaly detection, ESG scoring, and compliance evaluation within a Google Antigravity-inspired enterprise ERP context.
-- `n8n` workflows for automation and orchestration.
-- audit documentation and standards for IFRS-as-code and EU AI Act control layers.
-- GitHub Actions CI for reproducible execution and artifact generation.
-- audit issue templates for structured bug reporting.
+This repository investigates how multi-agent AI, language models, machine learning, explainability, and workflow orchestration can support accounting and audit research while preserving evidence provenance, reproducibility, professional skepticism, uncertainty disclosure, and human judgment.
 
-## Key capabilities
+## Current capabilities
 
-- Synthetic ERP/ledger data generation with accounting and compliance context.
-- Multi-agent scoring using BERT-style semantic embeddings and proxy risk models.
-- **Fuzzy Logic Neural Networks for Explainable AI:** IFRS-as-code and internal audit standards layered on interpretable fuzzy inference engines aligned with EU AI Act requirements.
-- Anomaly detection via PyTorch autoencoder and Isolation Forest.
-- ESG score computation and EU AI Act-style compliance scoring.
-- Export to CSV, Excel (`.xlsx`), and Word (`.docx`) reports.
-- n8n automation examples for audit workflow orchestration.
-- Audit standard alignment with IFRS, EU AI Act, and international control layers.
+- synthetic ERP/ledger experimentation;
+- BERT-style semantic and risk analytics;
+- PyTorch autoencoder and Isolation Forest anomaly detection;
+- fuzzy-logic explainability experiments;
+- ESG and governance scoring prototypes;
+- n8n multi-agent workflow examples;
+- CSV/XLSX/DOCX research outputs;
+- GitHub Actions for reproducible execution;
+- audit/control mapping research.
 
-## Project structure
+Important research assets include `multi_agent_accounting_ai_runner.py`, `AUDIT_STANDARDS.md`, `FUZZY_LOGIC_EXPLAINABILITY.md`, and the workflows under `n8n/`.
 
-- `multi_agent_accounting_ai_runner.py` — main runnable workflow.
-- `requirements.txt` — Python package dependencies.
-- `deploy.ps1` — Windows deployment helper.
-- `.github/workflows/python-app.yml` — GitHub Actions workflow.
-- `.github/ISSUE_TEMPLATE/bug_report.md` — auditor-friendly issue template.
-- `AUDIT_STANDARDS.md` — IFRS-as-code, EU AI Act compliance, and audit layering.
-- `FUZZY_LOGIC_EXPLAINABILITY.md` — Fuzzy logic neural networks for explainable AI and audit transparency.
-- `n8n/bert_cyber_audit_workflow.json` — BERT + cyber audit automation.
-- `n8n/big4_llm_rag_tool.json` — Big4-style LLM + RAG audit tool (PwC, EY, KPMG, Deloitte concepts).
-- `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` — license options.
+## NAAIL scientific protocol
 
-## Deployment
+Original research extensions follow:
 
-### Local setup
+**Literature Validation → Co-Scientist Hypothesis Arena → ERA Empirical Design → AlphaEvolve / Computational Discovery → latent-structure reasoning → AI-to-AI Critic/Defender/Replicator → robustness → falsification → temporal/OOS validation → Chain-of-Evidence → DAG Governance → Human Gate.**
+
+See [`NAAIL_RESEARCH_PROTOCOL.md`](./NAAIL_RESEARCH_PROTOCOL.md).
+
+Scientific invariants:
+
+```text
+agent_consensus_is_truth = false
+model_confidence_is_evidence = false
+optimize_for_p_value = false
+failed_runs_are_deleted = false
+human_gate_required = true
+discovery_claim_allowed = false
+```
+
+## Reproducibility
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-```
-
-### Run the main workflow
-
-```powershell
 python .\multi_agent_accounting_ai_runner.py
 ```
 
-### Outputs
+Generated research artifacts are written to the repository's data/output paths. Results from synthetic or proxy models must not be represented as validated professional conclusions.
 
-The workflow generates files in the `data/` folder:
+## Relationship to NAAIL
 
-- `final_agent_output.csv`
-- `multi_agent_accounting_ai_results.xlsx`
-- `multi_agent_accounting_ai_figures.docx`
-- `data/n8n_bert_cyber_audit_log.json` (if n8n workflow is used)
-- `data/big4_llm_rag_audit_response.json` (if n8n workflow is used)
+This repository is a supporting experimental system for the broader NAAIL portfolio, including POMELO/VERA, KIWI CAM/KAM research, IFRS-AI-Inspector, ICFR/time-series research, and AAA Audit & Accounting AI Laboratory.
 
-## GitHub Actions
+## Citation
 
-Continuous integration is provided by `.github/workflows/python-app.yml`.
-It runs on pushes and pull requests to `main`, installs dependencies, executes the runner, and uploads generated artifacts.
+Use [`CITATION.cff`](./CITATION.cff). Suggested citation:
 
-## Auditor support
+> Homayoun, S. (2026). *Multi-Agent Accounting AI Framework: BERT, Audit Analytics, Explainability and Governed Agentic Research* [Research software]. GitHub. https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture. ORCID: 0000-0002-2536-0446.
 
-Use the GitHub issue template at `.github/ISSUE_TEMPLATE/bug_report.md` for audit findings.
-Tag issues with `bug4Audit` to highlight compliance or control gaps.
+## IP / patent-readiness notice
 
-## n8n automation
+This repository may describe original research concepts, architectures, methods, or prototypes for which intellectual-property protection may be considered. **Publication on GitHub is not a patent filing and does not guarantee patentability.** Patent-sensitive implementation details may be withheld pending IP review. No trademark, patent, endorsement, or affiliation rights are granted by this notice.
 
-This repo includes n8n workflow examples for audit and automation:
+## License and third-party rights
 
-- `n8n/bert_cyber_audit_workflow.json` — ERPNext artifact collection, BERT risk proxy, and audit log generation.
-- `n8n/big4_llm_rag_tool.json` — a Big4-style retrieval augmented generation tool for LLM-guided audit guidance.
+This repository currently contains MIT and Apache licensing materials. Those existing grants cannot be retroactively converted into a non-commercial restriction for copies already distributed under those terms. Third-party software, models, standards, datasets, workflows, and trademarks remain subject to their original terms.
 
-## Audit standards and controls
+Future proprietary or research-only NAAIL modules should be kept clearly separate and licensed before public release if commercial use is intended to be restricted.
 
-See `AUDIT_STANDARDS.md` for:
+## Responsible use
 
-- IFRS-as-code controls.
-- EU AI Act compliance layer.
-- Audit Data Standards (ADS) and data governance controls.
-- PCAOB and internal audit control alignment.
-- ISSB sustainability and ESG reporting.
-- international audit standard mapping.
-- GitHub-based transparency and traceability.
-
-### Recommended GitHub tags
-
-Use these tags to organize audit and compliance issues:
-
-- `bug4Audit`
-- `PCAOB`
-- `internal-control`
-- `risk-control`
-- `audit-traceability`
-- `ADS`
-- `Big4`
-- `PwC`
-- `EY`
-- `KPMG`
-- `Deloitte`
-- `EU-AI-Act`
-- `IFRS`
-- `ISSB`
-
-## Related Projects
-
-- [Financial Sentiment Analysis and Classification Deep Learning Models](https://github.com/Saehon/Financial-Sentiment-Analysis-and-Classification-Deep-Learning-Models) — A complementary project using deep learning for financial text analysis and sentiment classification.
-
-## License
-
-See `LICENSE-APACHE-2.0.txt` and `LICENSE-MIT.txt` for licensing options.
-
-## Notes
-
-This project is designed for research, demonstration, and audit automation support.
-It uses synthetic and proxy modeling approaches; it should not be used as a direct production accounting system without further validation and regulatory review.
-
+This project is for research, demonstration, and prototype evaluation. It is not an audit opinion, accounting advice, legal/regulatory advice, or a production accounting system. Real professional use requires appropriate validation, security, authorization, regulatory assessment, and qualified human judgment.

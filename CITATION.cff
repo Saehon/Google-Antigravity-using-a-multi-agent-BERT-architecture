@@ -7,7 +7,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-2536-0446"
 title: "Multi-Agent Accounting AI Framework: Audit Analytics, Digital Twins, Explainability and Governed Agentic Research"
 type: software
-version: "2026.2"
+version: "2026.3"
 date-released: 2026-09-14
 url: "https://github.com/Saehon/Google-Antigravity-using-a-multi-agent-BERT-architecture"
 keywords:
@@ -18,10 +18,17 @@ keywords:
   - Google ADK
   - Microsoft Agent Framework
   - Agent2Agent
+  - MCP
   - GraphRAG
   - BERT
   - explainable AI
   - audit analytics
   - scientific discovery
+  - AI Co-Scientist
+  - ERA
+  - AlphaEvolve
+  - latent-structure reasoning
   - chain of evidence
+  - DAG governance
+  - human gate
   - NAAIL
